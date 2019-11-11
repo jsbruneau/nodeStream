@@ -20,5 +20,13 @@
         "-f", 
         "mjpeg", 
         "pipe:1"
+    ],
+    "allInOneOptions": [
+        "-f", "v4l2",
+        "-i", "/dev/video0",
+        "-f", "mjpeg",
+        "-r", "1",
+        "-s", "480x272",
+        "pipe:1"
     ]
 }

@@ -1,5 +1,10 @@
-# nodeStream
+# Streaming Server
 Streaming from ffmpeg to HTML5 canvas.
+
+**Original Authors:** Gerald Kogler, Sergi Lario
+
+**Refactored and clean for linux only:** JS Bruneau
+
 
 ## Setup in 3 steps
 

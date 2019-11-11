@@ -19,6 +19,7 @@ function runSender(options){
 		const sender = spawn('ffmpeg', options);
 		sender.on('close', function (code) {
 			console.log('Sender process exited with code ' + code);
+
 		});
 		sender.on('error', function (err) {
 			throw err;
@@ -40,5 +41,5 @@ function runReceiver(options){
 			io.sockets.emit('canvas',frame);
 		});
 }
-runSender(config.senderOptions);
-runReceiver(config.receiverOptions);
+//runSender(config.senderOptions);
+runReceiver(config.allInOneOptions);
