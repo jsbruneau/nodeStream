@@ -1,0 +1,10 @@
+{
+  "name": "streamingserver",
+  "description": "Streaming ffmpeg to HTML5 canvas",
+  "author": "JS Bruneau, forked from Gerald Kogler, Sergi Lario",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": ">= 0.1"
+  },
+  "engine": "node >= 0.10.0"
+}

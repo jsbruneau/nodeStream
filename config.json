@@ -1,0 +1,24 @@
+{
+    "port": 8080,
+    "senderOptions": [
+        "-i", "/home/jsbruneau/nodeStream/test-videos/test1.mp4",
+        "-f", "h264",
+        "-vcodec", "libx264", 
+        "-r", "1",
+        "-s", "640x368",
+        "-g", "0",
+
+         "udp://127.0.0.1:5555"
+    ],
+    "receiverOptions": [
+        "-re", 
+        "-y", 
+        "-i", 
+        "udp://127.0.0.2:5555", 
+        "-preset", 
+        "ultrafast", 
+        "-f", 
+        "mjpeg", 
+        "pipe:1"
+    ]
+}
